@@ -1,21 +1,12 @@
 // Constants
 var detector_cost = 94.06;
-//~ var costs = {
-    //~ 'unit': {
-        //~ 'presence_detector': 61.54,
-        //~ 'with_photo_cell': 67.69
-    //~ },
-    //~ 'labour': 32.52, // 1.2 hours per fitting
-    //~ 'total': {
-        //~ 'presence_detector': 94.06,
-        //~ 'with_photo_cell': 100.21
-    //~ }
-//~ }
 
 // Functions
 function init(evt) {
     // Setup event to update the calculator when anything's changed.
-    $('input.live').bind('change',updateCalculator);
+    $('form').bind('input keyup click change',updateCalculator);
+    // With proper HTML5 support we only need "input"
+    // "keyup click change" have been added for backward compatability
     
     // Update the calculator right away for good measure
     updateCalculator();
