@@ -7,14 +7,13 @@
     <link rel="stylesheet" href="jquery.tooltip.css" />
     <script type="text/javascript" src="html5.js"></script>
     <script type="text/javascript" src="jquery.js"></script>
-    <!--<script type="text/javascript" src="jquery.dimensions.js"></script>-->
     <script type="text/javascript" src="jquery.tooltip.js"></script>
     <script type="text/javascript" src="calculator.js"></script>
   </head>
   
   <body>
     <h1>PIR Calculator</h1>
-    <!--<noscript><strong>This calculator requires JavaScript to be enabled.</strong></noscript>-->
+    <noscript><strong>This calculator uses JavaScript. Your browser does not appear to have JavaScript capabilities, and so the calculator will not work.</strong></noscript>
     
     <section id="pir_calculator">
       <section class="calculator" id="inputs">
@@ -23,7 +22,7 @@
           <div class="left">
             <label for="input_sensors">
               Number of PIR sensors required:
-              <img src="help.png" width="15" height="15" class="help" title="PIR must be able to identify occupant(s) at all positions within the area" />
+              <img src="help.png" class="help" title="PIR must be able to identify occupant(s) at all positions within the area" />
             </label>
           </div>
           <div class="right"><input class="live" type="number" name="sensors" id="input_sensors" value="0" /></div>
@@ -31,7 +30,7 @@
           <div class="left">
             <label for="input_running">
               Light running hours per annum:
-              <img src="help.png" width="15" height="15" class="help" title="The approximate number of hours that the lights are currently left on for over a 12 month period" />
+              <img src="help.png" class="help" title="The approximate number of hours that the lights are currently left on for over a 12 month period" />
             </label>
           </div>
           <div class="right"><input class="live" type="number" name="running" id="input_running" value="0" /></div>
@@ -39,14 +38,14 @@
           <div class="left">
             <label for="input_optimal">
               Optimal running hours per annum:
-              <img src="help.png" width="15" height="15" class="help" title="The approximate number of hours that the lights are actually needed on during a 12 month period" />            </label>
+              <img src="help.png" class="help" title="The approximate number of hours that the lights are actually needed on during a 12 month period" />            </label>
           </div>
           <div class="right"><input class="live" type="number" name="optimal" id="input_optimal" value="0" /></div>
           
           <div class="left">
             <label for="input_watts">
               Average watts per light:
-              <img src="help.png" width="15" height="15" class="help" title="In the area in which the PIR will operate" />
+              <img src="help.png" class="help" title="In the area in which the PIR will operate" />
             </label>
           </div>
           <div class="right"><input class="live" type="number" name="watts" id="input_watts" value="0" /></div>
@@ -54,7 +53,7 @@
           <div class="left">
             <label for="input_lights">
               Number of lights:
-              <img src="help.png" width="15" height="15" class="help" title="In the area in which the PIR will operate" />
+              <img src="help.png" class="help" title="In the area in which the PIR will operate" />
             </label>
           </div>
           <div class="right"><input class="live" type="number" name="lights" id="input_lights" value="0" /></div>
