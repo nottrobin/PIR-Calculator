@@ -1,0 +1,97 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>PIR Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+    <link rel="stylesheet" href="jquery.tooltip.css" />
+    <script type="text/javascript" src="html5.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <!--<script type="text/javascript" src="jquery.dimensions.js"></script>-->
+    <script type="text/javascript" src="jquery.tooltip.js"></script>
+    <script type="text/javascript" src="calculator.js"></script>
+  </head>
+  
+  <body>
+    <h1>PIR Calculator</h1>
+    <!--<noscript><strong>This calculator requires JavaScript to be enabled.</strong></noscript>-->
+    
+    <section id="pir_calculator">
+      <section class="calculator" id="inputs">
+        <h1>Inputs</h1>
+        <form disabled="disabled">
+          <div class="left">
+            <label for="input_sensors">
+              Number of PIR sensors required:
+              <img src="help.png" width="15" height="15" class="help" title="PIR must be able to identify occupant(s) at all positions within the area" />
+            </label>
+          </div>
+          <div class="right"><input class="live" type="number" name="sensors" id="input_sensors" value="0" /></div>
+          
+          <div class="left">
+            <label for="input_running">
+              Light running hours per annum:
+              <img src="help.png" width="15" height="15" class="help" title="The approximate number of hours that the lights are currently left on for over a 12 month period" />
+            </label>
+          </div>
+          <div class="right"><input class="live" type="number" name="running" id="input_running" value="0" /></div>
+          
+          <div class="left">
+            <label for="input_optimal">
+              Optimal running hours per annum:
+              <img src="help.png" width="15" height="15" class="help" title="The approximate number of hours that the lights are actually needed on during a 12 month period" />            </label>
+          </div>
+          <div class="right"><input class="live" type="number" name="optimal" id="input_optimal" value="0" /></div>
+          
+          <div class="left">
+            <label for="input_watts">
+              Average watts per light:
+              <img src="help.png" width="15" height="15" class="help" title="In the area in which the PIR will operate" />
+            </label>
+          </div>
+          <div class="right"><input class="live" type="number" name="watts" id="input_watts" value="0" /></div>
+          
+          <div class="left">
+            <label for="input_lights">
+              Number of lights:
+              <img src="help.png" width="15" height="15" class="help" title="In the area in which the PIR will operate" />
+            </label>
+          </div>
+          <div class="right"><input class="live" type="number" name="lights" id="input_lights" value="0" /></div>
+          
+          <div class="left">
+            <label for="input_cost">
+              Electricity cost <small>(&pound;/kWh)</small>:
+            </label>
+          </div>
+          <div class="right"><input class="live" type="number" name="cost" id="input_cost" value="0" /></div>
+        </form>
+      </section>
+      
+      <section class="calculator" id="results">
+        <h1>Results</h1>
+        
+        <div class="left"><h2>Estimated consumption:</h2></div>
+        <div class="right"><span id="consumption">0</span> <small>kWh</small></div>
+        
+        <div class="left"><h2>Suggested consumption:</h2></div>
+        <div class="right"><span id="suggestion">0</span> <small>kWh</small></div>
+        
+        <div class="left"><h2>Cost of action:</h2></div>
+        <div class="right"><small>£</small><span id="cost">0</span></div>
+        
+        <div class="left"><h2>Energy saving potential:</h2></div>
+        <div class="right"><span id="energy_saving">0</span> <small>kWh</small></div>
+        
+        <div class="left"><h2>CO<sub>2</sub> reduction:</h2></div>
+        <div class="right"><span id="co2_saving">0</span> <small>tonnes</small></div>
+        
+        <div class="left"><h2>Financial saving:</h2></div>
+        <div class="right"><small>£</small><span id="financial_saving">0</span></div>
+        
+        <div class="left"><h2>ROI:</h2></div>
+        <div class="right"><span id="roi">0</span><small>%</small><div>
+      </section>
+    </section>
+  </body>
+</html>
