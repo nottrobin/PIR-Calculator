@@ -4,7 +4,7 @@ var detector_cost = 94.06;
 // Functions
 function init(evt) {
     // Setup event to update the calculator when anything's changed.
-    $('form').bind('input keyup click change',updateCalculator);
+    $('form').bind('input',updateCalculator);
     // With proper HTML5 support we only need "input"
     // "keyup click change" have been added for backward compatability
     
